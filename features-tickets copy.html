@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Admin Kuecake</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="assets/modules/weather-icon/css/weather-icons.min.css">
+  <link rel="stylesheet" href="assets/modules/weather-icon/css/weather-icons-wind.min.css">
+  <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+<!-- Start GA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-94034622-3');
+</script>
+<!-- /END GA -->
+<link rel="shortcut icon" href="assets/img/logobundar.png" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+          
+        
+        </form>
+        <ul class="navbar-nav navbar-right">
+    
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Notifications
+             
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-icon bg-primary text-white">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Change profile picture succeeded
+                    <div class="time text-primary">2 Min Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-success text-white">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>aryawiraydh</b> has transferred payment for order<b> 012345678 </b>
+                    <div class="time">10 Hours Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-info text-white">
+                    <i class="far fa-bell"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>aryawiraydh</b> has placed an order for <b> Tepung Beras Rosebrand 250 gr </b>
+                    <div class="time">12 Hours Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-danger text-white">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Sambal Sasa stock is running out, want to increase stock?
+                    <div class="time">17 Hours Ago</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-primary text-white">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b> aryawiraydh </b>and <b> 10 others</b> liked <b> Japanese Mooncake Recipe </b>
+                    <div class="time">Yesterday</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="features-activities.html">View All <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+            <img alt="image" src="assets/img/admin.jpg" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Hi, Lintang Sekar</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a href="features-profile.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profile
+              </a>
+              <a href="auth-reset-password.html" class="dropdown-item has-icon">
+                <i class="fas fa-question-circle"></i> Reset Password
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="auth-login.html" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index-0.html">
+              <img src="assets/img/logopanjang.png" alt="Logo Panjang">
+            </a>
+</div>      
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index-0.html">
+              <img src="assets/img/logobundar.png" alt="Logo Panjang">
+            </a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header"></li>
+            <li class="dropdown active">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="index-0.html"> General Dashboard</a></li>
+                <li class="active"><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>
+              </ul>
+              </li>
+              <li>
+                <a class="nav-link" href="recipe.html"><i class="far fa-newspaper"></i> <span>Recipe</span></a>
+            </li>
+            <li>
+              <a class="nav-link" href="products.html"><i class="far fa-square"></i> <span>Products</span></a>
+            </li> 
+            <li class="dropdown ">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i><span>Sales</span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="nav-link" href="pending.html">Pending</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="shipped.html">Shipped</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="done.html">Done</a>
+                </li>
+              </ul>
+              </li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-header">
+            <h1>Customers Need Help</h1>
+            <div class="section-header-breadcrumb">
+              <div class="breadcrumb-item active"><a href="index.html">Dashboard</a></div>
+              <div class="breadcrumb-item">Customers Help</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <h2 class="section-title">Help Your Customer</h2>
+            <p class="section-lead">
+              Some customers need your help.
+            </p>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Customers Help</h4>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="btn btn-primary btn-icon icon-left btn-lg btn-block mb-4 d-md-none" data-toggle-slide="#ticket-items">
+                      <i class="fas fa-list"></i> All Customers Help
+                    </a>
+                    <div class="tickets">
+                      <div class="ticket-items" id="ticket-items">
+                        <div class="ticket-item active">
+                          <div class="ticket-title">
+                            <h4>My order hasn't arrived yet</h4>
+                          </div>
+                          <div class="ticket-desc">
+                            <div>naurashl</div>
+                            <div class="bullet"></div>
+                            <div>1 min ago</div>
+                          </div>
+                        </div>
+                        <div class="ticket-item">
+                          <div class="ticket-title">
+                            <h4>Cancel my order please!</h4>
+                          </div>
+                          <div class="ticket-desc">
+                            <div>felizadelia</div>
+                            <div class="bullet"></div>
+                            <div>2 hours ago</div>
+                          </div>
+                        </div>
+                        <div class="ticket-item">
+                          <div class="ticket-title">
+                            <h4>Where is my mother?</h4>
+                          </div>
+                          <div class="ticket-desc">
+                            <div>bgzpndy</div>
+                            <div class="bullet"></div>
+                            <div>6 hours ago</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ticket-content">
+                        <div class="ticket-header">
+                          <div class="ticket-sender-picture img-shadow">
+                            <img src="assets/img/avatar/avatar-5.png" alt="image">
+                          </div>
+                          <div class="ticket-detail">
+                            <div class="ticket-title">
+                              <h4>My order hasn't arrived yet</h4>
+                            </div>
+                            <div class="ticket-info">
+                              <div class="font-weight-600">naurashl</div>
+                              <div class="bullet"></div>
+                              <div class="text-primary font-weight-600">1 min ago</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ticket-description">
+                          <p>I'm extremely disappointed with the delivery service. My order hasn't arrived yet, even though it was supposed to be here by now. This has left me feeling frustrated as I was eagerly anticipating the arrival of the items I purchased. I've tried reaching out to customer service, but I haven't received a satisfactory response. I expect a higher level of service, especially when it comes to communicating the status of deliveries to customers. Delays like these should be clearly and transparently communicated. I hope this issue can be resolved promptly, and I urge the company to improve its delivery tracking system and provide more accurate information to customers in the future.
+                            </p>
+
+                          <div class="gallery">
+                            <div class="gallery-item" data-image="assets/img/news/img01.jpg" data-title="Image 1"></div>
+                            <div class="gallery-item" data-image="assets/img/news/img02.jpg" data-title="Image 2"></div>
+                            <div class="gallery-item" data-image="assets/img/news/img03.jpg" data-title="Image 3"></div>
+                            <div class="gallery-item gallery-more" data-image="assets/img/news/img04.jpg" data-title="Image 4">
+                              <div>+2</div>
+                            </div>
+                          </div>
+</div>
+<div>
+  <div class="ticket-content">
+    <div class="ticket-header">
+      <div class="ticket-sender-picture img-shadow">
+        <img src="assets/img/logobundar.png" alt="image">
+      </div>
+      <div class="ticket-detail">
+        <div class="ticket-title">
+          <h4>Dear, naurashl</h4>
+        </div>
+        
+                            <div class="ticket-info">
+                              <div class="font-weight-600">KueCake's Admin</div>
+                              <div class="bullet"></div>
+                              <div class="text-primary font-weight-600">20s</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ticket-description">
+                          <p>
+                            We sincerely apologize for the inconvenience you've experienced with the delayed delivery of your order. We understand how frustrating this situation must be, and we appreciate your patience.
+
+Upon investigating, it seems there was an unexpected delay in the processing and dispatch of your order. We truly regret any inconvenience this has caused. Rest assured, our team is actively working to expedite the shipment, and we will provide you with updated tracking information as soon as possible.
+
+In the meantime, if there's anything specific you'd like us to address or if you have any further concerns, please feel free to reach out to our customer service team directly at [customer service contact details]. We value your feedback, and we are committed to improving our service based on experiences like yours.
+
+Once again, we apologize for any inconvenience caused, and we appreciate your understanding.
+<br>
+Best regards,
+<br>
+Lintang Sekar
+<br>
+KueCake
+                          </p>
+                            </form>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; Kelompok 3 UI/UX <div class="bullet"></div> Design By <a href="https://www.figma.com/file/yhQq0yqij7otW3a0ZMeVbG/kuecake?type=design&node-id=438%3A5282&mode=design&t=K8q4s5BDZFvm1G2n-1">KueCake</a>
+        </div>
+        <div class="footer-right">
+          
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/stisla.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="assets/modules/summernote/summernote-bs4.js"></script>
+  <script src="assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
